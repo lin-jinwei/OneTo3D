@@ -119,11 +119,15 @@ D:/Blender/blender.exe -P E:\OneTo3D\bpyBones.py
 
 #### Optional Operations
 1. Change the generated 3D video to '.gif' dynamic image:
+   
 a. Install moviepy first.
+
 ```cmd
 pip install moviepy
-``` 
-b. 
+```
+
+b. Run to get the gif image.
+
 ```cmd
 python [OneTo3D Home]/bpyBones.py --videoName [The video name in [[OneTo3D Home]/output3D./3Dvideo]]
 ```
