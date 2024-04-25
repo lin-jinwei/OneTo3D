@@ -48,24 +48,72 @@ You can test other versions of python enviroments.
 
 ### Usage and Test
 
-1. Generate the initial 3D model:
+#### Preparing the Data
+
+1. Put the image of analyzed object in the directory **./data** of **OneTo3D**. The default format of the image is .png.
+(Note: In the version of OneTo3D, the suitable type of the processed object is human form.)
+
+3. Run the following code to remove the background (from DreamGaussian). If the Background is not removed clear, removing it manually.
 
 ```cmd
-python main.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
+python dg1.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
 ```
 example:
 ```cmd
-python main.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
+python dg1.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
 ```
 
+---
 
+#### Run and Generating
+1. Generate the initial 3D model:
 
+```cmd
+python process.py data/[the name (including the extension) of the processed image]
+```
+example:
+```cmd
+python process.py data/people.png
+```
 
+2. Make the basic optimization for the initial 3D model:
+```cmd
+python dg2.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
+```
+example:
+```cmd
+python dg2.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
+```
 
+3. Run the **get2DBones.py** to analyze and get the keypoints :
+```cmd
+python [OneTo3D home path]/get2DBones.py --objName people
+```
+example:
+```cmd
+& D:/Anaconda/envs/OneTo3D/python.exe e:/OneTo3D/get2DBones.py --objName people
+```
+The **--objName** parameter represents the name of the image of analyzed object.
 
+4. Run the **animation.py** to get the commands list of the input text:
+```cmd
+python [OneTo3D home path]/animation.py --command [text command]
+```
+example:
+```cmd
+& D:/Anaconda/envs/OneTo3D/python.exe e:/OneTo3D/animation.py --command 'The object moves 2 miles in x direction.'
+```
 
+5. Using the **Blender** python environment to run the **bpyBones.py**, to automatically generate self-adaption armature of the object, armature analyzing and binding, 3D cameras and lights adjustment of the secene, and generating the **re-editable** blender files and 3D video with '.mkv' format.   
 
-
+```cmd
+[[Blender Installed Path]/blender.exe] -P E:\OneTo3D\bpyBones.py
+```
+example:
+```cmd
+D:/Blender/blender.exe -P E:\OneTo3D\bpyBones.py
+```
+6. The generated 3D model and video files are saved in './output3D'.
 
 
 
