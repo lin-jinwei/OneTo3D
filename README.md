@@ -136,6 +136,10 @@ example:
 & D:/Anaconda/envs/OneTo3D/python.exe E:\OneTo3D\vidoeToGif.py --videoName '0001-0396.mkv'
 ```
 
+2. Configure and run the [OneTo3D Home]/drawKeyPoint.py to get the armature key points drawn image.
+
+3. Configure and run the [OneTo3D Home]/bpy6Views.py to get the six views projection image of the analyzed object.
+
 ---
 
 ### Paper Cite
