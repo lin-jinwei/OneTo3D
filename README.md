@@ -97,7 +97,7 @@ The **--objName** parameter represents the name of the image of analyzed object.
 
 4. Run the **animation.py** to get the commands list of the input text:
 ```cmd
-python [OneTo3D home path]/animation.py --command [text command]
+python [OneTo3D Home]/animation.py --command [text command]
 ```
 example:
 ```cmd
@@ -107,7 +107,7 @@ example:
 5. Using the **Blender** python environment to run the **bpyBones.py**, to automatically generate self-adaption armature of the object, armature analyzing and binding, 3D cameras and lights adjustment of the secene, and generating the **re-editable** blender files and 3D video with '.mkv' format.   
 
 ```cmd
-[[Blender Installed Path]/blender.exe] -P E:\OneTo3D\bpyBones.py
+[[Blender Installed Path]/blender.exe] -P [OneTo3D Home]/bpyBones.py
 ```
 example:
 ```cmd
@@ -115,7 +115,27 @@ D:/Blender/blender.exe -P E:\OneTo3D\bpyBones.py
 ```
 6. The generated 3D model and video files are saved in './output3D'.
 
+---
 
+#### Optional Operations
+1. Change the generated 3D video to '.gif' dynamic image:
+a. Install moviepy first.
+```cmd
+pip install moviepy
+``` 
+b. 
+```cmd
+python [OneTo3D Home]/bpyBones.py --videoName [The video name in [[OneTo3D Home]/output3D./3Dvideo]]
+```
+example:
+```cmd
+& D:/Anaconda/envs/OneTo3D/python.exe E:\OneTo3D\vidoeToGif.py --videoName '0001-0396.mkv'
+```
+
+---
+
+### Paper Cite
+Writing...
 
 
 
