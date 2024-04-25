@@ -138,7 +138,7 @@ example:
 
 2. Configure and run the [OneTo3D Home]/drawKeyPoint.py to get the armature key points drawn image.
 
-3. Configure and run the [OneTo3D Home]/bpy6Views.py to get the six views projection image of the analyzed object.
+3. Configure and run the [OneTo3D Home]/bpy6Views.py to get the six views projection image of the object.
 
 ---
 
