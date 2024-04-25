@@ -38,11 +38,25 @@ conda create -n OneTo3D python=3.10.11
 
 You can test other versions of python enviroments.
 
-3. Download the whole directoies of [diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization).
+3. Download the whole directoies of [diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization) and [simple-knn](https://github.com/graphdeco-inria/gaussian-splatting/blob/main/submodules/simple-knn). Build and intall these two dependencies here or later. 
 
 4. Install the same enviroment of [DreamGaussian](https://github.com/dreamgaussian/dreamgaussian).
 
+5. Run and Install other required python libraries.
 
+---
+
+### Usage and Test
+
+1. Generate the initial 3D model:
+
+```cmd
+python main.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
+```
+example:
+```cmd
+python main.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
+```
 
 
 
