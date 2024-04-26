@@ -3,7 +3,7 @@
 Project Code For Paper: OneTo3D: One Image to Editable Dynamic 3D Model and Video Generation
 
 
-[Project Page](https://lin-jinwei.github.io/projects/OneTo3D/OneTo3D.html)
+[Project Page](https://lin-jinwei.github.io/projects/OneTo3D/OneTo3D.html)  [HuggingFace Page](https://huggingface.co/LinJinwei/OneTo3D)
 
 ---
 
@@ -40,6 +40,8 @@ command = 'The object walked 2 steps or times, then turns left 0 degrees, raised
 
 ---
 ### Installation
+
+0. You can directly download the zip file of the whole OneTo3D project in [HuggingFace Page](https://huggingface.co/LinJinwei/OneTo3D) (including the model).
 
 1. For the part of generating the initial 3D model, our project selects the [DreamGaussian](https://github.com/dreamgaussian/dreamgaussian) as the basic generation model. You can select other suitable you like to generate the initial 3D model.
 
