@@ -329,52 +329,103 @@ if __name__ == '__main__':
     animation(args.command)
 
 
+    # command = 'The object moves 2 miles in x direction, moves 2 miles in -x direction.'
+    # command = 'The object moves 2 miles in x direction, moves 2 miles in -x direction, then moved 3 miles in y direction, moving 1 miles in -z direction, then moved 5 miles in -y direction, moving 1 miles in z direction.'
+    # command = 'The object raises his head, then bowed his head, then raises his head, then bowed his head.'
+    # command = 'The object raises his head 80 degrees, then bowed his head 30 degrees, then raises his head 10 degrees, then bowed his head 50 degrees.'
+
+    # command = 'The object walked 2 steps or times, then turns left 0 degrees, moves 3 miles in -y direction, and ran 3 steps times seconds, following moves 2 miles in y direction. Then turns left, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, following moves 2 miles in y direction.'
+    # command = 'The object walked 10 steps times, raises his head 60 degrees, and ran 10 steps times seconds, bowed his head 80 degrees, then walkes 10 steps.'
+    # command = 'The object walked 10 steps times, raises his head 60 degrees, and ran 10 steps times seconds, bowed his head 80 degrees, then walkes 10 steps.'
+
+
+    # command = 'The object walked 2 steps or times, then turns left 0 degrees, moves 3 miles in -y direction, and ran 3 steps times seconds, following moves 2 miles in y direction. Then turns left, moves 3 miles in x direction, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, following moves 2 miles in y direction.'
+
+
+
+
     # command = 'The object moves 2 miles in x direction. '
     # command = 'The object moves 2 miles in -x direction.'
-    # command = 'The object ran 3 steps tiems seconds to the car'
-    # command = 'Big: The object moves 2 miles in x direction, ran 4 steps tiems seconds to the car'
-    # command = 'Big: The object walked 2 steps tiems and ran 3 steps tiems seconds to the car'
+    # command = 'The object ran 3 steps times seconds to the car'
+    # command = 'Big: The object moves 2 miles in x direction, ran 4 steps times seconds to the car'
+    # command = 'Big: The object walked 2 steps times and ran 3 steps times seconds to the car'
     
-    # command = 'The object raises his head to the car'
+    # command = 'The object raises his head to the car.'
     # command = 'The object bowed his head to the car'
     # command = 'The object bowed his head 20.12 degree to the car'
     # command = 'The object raises his head 20.12 degrees to the car'
     # command = 'Big: The object bowed his head 20 degrees and raises his head 66 degrees to the car'
     
+
+    # command = 'The object raises his head 20.12 degrees and shakes his head 60 degrees.'
+    # command = 'The object looks left, looks right, looks left 22.33 degrees, looks right 22.33 degrees, raises his head 20.12 degrees and shakes his head 60 degrees.'
+
+
+
     # command = 'The object shakes his head 60 degrees to the car'
     # command = 'The object raises his head 20.12 degrees and shakes his head 60 degrees to the car'
-    # command = 'Big: The object raises his head 50 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, to the car'
+    # command = 'Big: The object raises his head 50 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, walked 2 steps times and ran 3 steps times seconds, to the car'
     
     # command = 'The object looks left to the car'
     # command = 'The object looks left 22.33 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, to the car'
 
     # command = 'The object looks right to the car'
     # command = 'The object looks right 22.33 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, to the car'
+
+
+
+    # command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, then turns left, moves 3 miles in x direction, raising his left hand 20 degrees, raised his right hand 20 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction.'
+    # command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, then turns left, moves 3 miles in x direction, raising his left hand 20 degrees, raised his right hand 20 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction.'
+    # command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, then turns left, moves 3 miles in x direction, looks left, looks right, raising his left hand 20 degrees, raised his right hand 20 degrees, looks right 22.33 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction.'
     
+    
+
     # command = 'The object raised his left hand to the car'
     # command = 'The object raised raised his right hand, raised his left hand 60 degrees to the car'
     # # command = 'The object raised his right hand 30 degrees to the car'
     # command = 'The object raised raised his left hand 60 degrees and raised his right hand 30 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, to the car'
 
     # command = 'The object puts down his left hand 60 degrees to the car'
     # command = 'The object puts down his right hand 80 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, to the car'
 
     # command = 'The object waves his left hand 60 degrees to the car'
     # command = 'The object waves his right hand 60 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, to the car'
     
+
+
+    # command = 'The object lifts his left leg, puts down his left leg, lifts his right leg, puts down his right leg, puting down his right leg, going.'
+
+    # command = 'Big: The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, puts down his left hand 88 degrees, then turns left, moves 3 miles in x direction, looks left, looks right, raising his left hand 30 degrees, raised his right hand 20 degrees, looks right 22.33 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction. Then the object lifts his left leg, puts down his left leg, lifts his right leg, puts down his right leg, puting down his right leg, putting down his left leg 60 degrees, lifts his left leg 10 degrees, going.'
+
+
+
     # command = 'The object lifts his left leg 60 degrees to the car'
     # command = 'The object lifts his right leg 60 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, to the car'
     # command = 'The object puts down his left leg to the car, puts down his right leg 60 degrees to the car'
     # command = 'The object puts down his left leg to the car'
+    # command = 'The object puts down his right leg to the car'
     # command = 'The object puts down his left leg 60 degrees to the car'
     # command = 'The object puts down his right leg 60 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 60 degrees, raised his right hand 30 degrees, put down his left hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, to the car'
+
+
+    # command = 'The object raises his left forearm, raises his right forearm, puts down his left forearm, puts down his right forearm going.'
+    
+    # command = 'The object raises his left forearm 60 degrees, raises his right forearm 60 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, going.'
+
+
+    # command = 'The object puts down his left calf 60 degrees, lifts his left calf 60 degrees, puts down his right calf 60 degrees, lifts his right calf 60 degrees, going.'
+    # command = 'The object lifts his left leg 0 degrees,, lifts his left leg, puts down his left calf 60 degrees, lifts his left calf 60 degrees, puts down his right calf 60 degrees, lifts his right calf 60 degrees, puts down his left leg, going.'
+    
+    command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, puts down his left hand 88 degrees, then turns left, moves 3 miles in x direction, looks left, looks right, raising his left hand 60 degrees, raised his right hand 20 degrees, looks right 22.33 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction. Then the object lifts his left leg, puts down his left leg, lifts his right leg, puts down his right leg, puting down his right leg, putting down his left leg 60 degrees, lifts his left leg 10 degrees. Then The object lifts his left leg 0 degrees, lifts his left leg, puts down his left calf 60 degrees, lifts his left calf 60 degrees, puts down his right calf 60 degrees, lifts his right calf 60 degrees, puts down his left leg, moves 3 miles in -x direction, run in 5 miles, raised his left hand 60 degrees, waves his left hand, waves his left forearm, going.'
+
+
 
     # command = 'The object raises his left forearm to the car'
     # command = 'The object raises his left forearm 60 degrees to the car'
@@ -388,7 +439,7 @@ if __name__ == '__main__':
     # command = 'The object waves his right forearm to the car'
     # command = 'The object waves his left forearm 45 degrees to the car'
     # command = 'The object waves his right forearm 45 degrees to the car'
-    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 20 degrees, raised his right hand 20 degrees, put down his left hand 30 degrees, put down his right hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, lifts his left leg, raises his left forearm 30 degrees, raises his right forearm 30 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, wave his left forearm 45 degrees, wave his right forearm 45 degrees, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 20 degrees, raised his right hand 20 degrees, put down his left hand 30 degrees, put down his right hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, lifts his left leg, raises his left forearm 30 degrees, raises his right forearm 30 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, wave his left forearm 45 degrees, wave his right forearm 45 degrees, to the car'
 
     
     # command = 'The object puts down his left calf 60 degrees to the car'
@@ -399,12 +450,12 @@ if __name__ == '__main__':
     # command = 'The object puts down his right calf to the car'
     # command = 'The object lifts his left calf to the car'
     # command = 'The object lifts his right calf to the car'
-    command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 20 degrees, raised his right hand 20 degrees, put down his left hand 30 degrees, put down his right hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, lifts his left leg, raises his left forearm 30 degrees, raises his right forearm 30 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, wave his left forearm 45 degrees, wave his right forearm 45 degrees, puts down his left calf 20 degrees, puts down his right calf 20 degrees, lifts his left calf 20 degrees, lifts his right calf 20 degrees, puts down his left calf, puts down his right calf, lifts his left calf, lifts his right calf, to the car'
+    # command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps times and ran 3 steps times seconds, raised his left hand 20 degrees, raised his right hand 20 degrees, put down his left hand 30 degrees, put down his right hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, lifts his left leg, raises his left forearm 30 degrees, raises his right forearm 30 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, wave his left forearm 45 degrees, wave his right forearm 45 degrees, puts down his left calf 20 degrees, puts down his right calf 20 degrees, lifts his left calf 20 degrees, lifts his right calf 20 degrees, puts down his left calf, puts down his right calf, lifts his left calf, lifts his right calf, to the car'
 
 
     
     
-    # animation(command)
+    animation(command)
 
 
 
