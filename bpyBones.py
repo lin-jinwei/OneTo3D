@@ -1432,7 +1432,7 @@ def processCommand(command_L):
                         if id2:
                             D = float(id2.group())
                         else:
-                            D = 360
+                            D = -1
                 else:
                     id = re.search(r'[\s0-9\.a-zA-Z]*calf[s]*', end_idx_text)
                     if id:
@@ -1448,7 +1448,7 @@ def processCommand(command_L):
 
                 print(f'{direct = }')
               
-                if D != 360:
+                if D != -1:
                     last_frame, ALL_Frames = animate_turn(direct=direct, startf=last_frame, keyf=10, D=D)
                 else:
                     last_frame, ALL_Frames = animate_turn(direct=direct, startf=last_frame, keyf=10)
@@ -1472,37 +1472,37 @@ def processCommand(command_L):
                         if id2:
                             D = float(id2.group())
                         else:
-                            D = 0
+                            D = -1
                 else:
                     D = 0
                 print(f'{D = }')
               
                 if com[0] == 'raise':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_raise_head(startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_raise_head(startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'bow':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_bow_head(startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_bow_head(startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'shake':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_shake_head(startf=last_frame, D=D)
                     else:
                         last_frame, ALL_Frames = animate_shake_head(startf=last_frame)
                     print(f'{last_frame = }')
                 elif com[0] == 'look left':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_look_left(startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_look_left(startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'look right':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_look_right(startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_look_right(startf=last_frame, keyf=10)
@@ -1518,7 +1518,7 @@ def processCommand(command_L):
                 end_idx_text = re.search(r'[\s0-9\.a-zA-Z]*[,.]*', end_idx_text).group()
 
                 searchStr = ''
-                D = 0
+                D = -1
                 if re.search(r'degree[s]', end_idx_text):
                     id = re.search(r'[\s0-9\.a-zA-Z]*degree[s]', end_idx_text)
                     if id:
@@ -1533,7 +1533,7 @@ def processCommand(command_L):
                     if id:
                         searchStr = id.group()
                         
-                # print(f'{D = }')
+                print(f'{D = }')
                 # print(f'{searchStr = }')
 
                 direct = ''
@@ -1548,19 +1548,19 @@ def processCommand(command_L):
                 print(f'{direct = }')
               
                 if com[0] == 'raise':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_raise_hand_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_raise_hand_Y(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'put_down':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_putdown_hand_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_putdown_hand_Y(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'wave':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_wave_hand_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_wave_hand_Y(direct=direct, startf=last_frame, keyf=10)
@@ -1575,7 +1575,7 @@ def processCommand(command_L):
                 end_idx_text = re.search(r'[\s0-9\.a-zA-Z]*[,.]*', end_idx_text).group()
 
                 searchStr = ''
-                D = 0
+                D = -1
                 if re.search(r'degree[s]', end_idx_text):
                     id = re.search(r'[\s0-9\.a-zA-Z]*degree[s]', end_idx_text)
                     if id:
@@ -1590,7 +1590,7 @@ def processCommand(command_L):
                     if id:
                         searchStr = id.group()
 
-                # print(f'{D = }')
+                print(f'{D = }')
                 # print(f'{searchStr = }')
 
                 direct = ''
@@ -1605,19 +1605,19 @@ def processCommand(command_L):
                 # print(f'{direct = }')
               
                 if com[0] == 'lift':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_lift_leg_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_lift_leg_X(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'put_down':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_putdown_leg_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_putdown_leg_X(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'wave':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_wave_leg_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_wave_leg_X(direct=direct, startf=last_frame, keyf=10)
@@ -1632,7 +1632,7 @@ def processCommand(command_L):
                 end_idx_text = re.search(r'[\s0-9\.a-zA-Z]*[,.]*', end_idx_text).group()
 
                 searchStr = ''
-                D = 0
+                D = -1
                 if re.search(r'degree[s]', end_idx_text):
                     id = re.search(r'[\s0-9\.a-zA-Z]*degree[s]', end_idx_text)
                     if id:
@@ -1647,7 +1647,7 @@ def processCommand(command_L):
                     if id:
                         searchStr = id.group()
 
-                # print(f'{D = }')
+                print(f'{D = }')
                 # print(f'{searchStr = }')
 
                 direct = ''
@@ -1662,19 +1662,19 @@ def processCommand(command_L):
                 print(f'{direct = }')
               
                 if com[0] == 'raise':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_raise_forearm_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_raise_forearm_Y(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'put_down':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_putdown_forearm_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_putdown_forearm_Y(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'wave':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_wave_forearm_Y(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_wave_forearm_Y(direct=direct, startf=last_frame, keyf=10)
@@ -1689,7 +1689,7 @@ def processCommand(command_L):
                 end_idx_text = re.search(r'[\s0-9\.a-zA-Z]*[,.]*', end_idx_text).group()
 
                 searchStr = ''
-                D = 0
+                D = -1
                 if re.search(r'degree[s]', end_idx_text):
                     id = re.search(r'[\s0-9\.a-zA-Z]*degree[s]', end_idx_text)
                     if id:
@@ -1704,7 +1704,7 @@ def processCommand(command_L):
                     if id:
                         searchStr = id.group()
 
-                # print(f'{D = }')
+                print(f'{D = }')
                 # print(f'{searchStr = }')
 
                 direct = ''
@@ -1719,19 +1719,19 @@ def processCommand(command_L):
                 # print(f'{direct = }')
               
                 if com[0] == 'lift':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_lift_calf_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_lift_calf_X(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'put_down':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_putdown_calf_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_putdown_calf_X(direct=direct, startf=last_frame, keyf=10)
                     print(f'{last_frame = }')
                 elif com[0] == 'wave':
-                    if D != 0:
+                    if D != -1:
                         last_frame, ALL_Frames = animate_wave_calf_X(direct=direct, startf=last_frame, keyf=10, D=D)
                     else:
                         last_frame, ALL_Frames = animate_wave_calf_X(direct=direct, startf=last_frame, keyf=10)
