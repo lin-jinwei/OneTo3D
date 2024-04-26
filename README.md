@@ -2,6 +2,9 @@
 
 Project Code For Paper: OneTo3D: One Image to Editable Dynamic 3D Model and Video Generation
 
+
+[Project Page](https://lin-jinwei.github.io/projects/OneTo3D/OneTo3D.html)
+
 ---
 
 ### OnTo3D Logo
