@@ -26,6 +26,8 @@ command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees
 #### Output: Editable 3D Model and Video
 ![image](https://github.com/lin-jinwei/OneTo3D/blob/main/output3D/gifs/0001-0396.gif)
 
+![image](https://github.com/lin-jinwei/OneTo3D/blob/main/output3D/gifs/v25.gif)
+
 The speed of object actions and 3D video rendering is editable.  
 
 ---
