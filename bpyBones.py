@@ -1414,6 +1414,47 @@ def processCommand(command_L):
                 else:
                     print('==> run and work command: please enter the correct direction.')
 
+
+            # turn
+            # ==========================================================================
+            elif com[0] == 'turn left' or com[0] == 'turn right':
+                start_idx = com[2][0]
+                end_idx_text = command_words[start_idx:]
+                end_idx_text = re.search(r'[\s0-9\.a-zA-Z]*[,.]*', end_idx_text).group()
+
+                searchStr = ''
+                D = 360
+                if re.search(r'degree[s]', end_idx_text):
+                    id = re.search(r'[\s0-9\.a-zA-Z]*degree[s]', end_idx_text)
+                    if id:
+                        searchStr = id.group()
+                        id2 = re.search(r'[0-9\.]+', searchStr)
+                        if id2:
+                            D = float(id2.group())
+                        else:
+                            D = 360
+                else:
+                    id = re.search(r'[\s0-9\.a-zA-Z]*calf[s]*', end_idx_text)
+                    if id:
+                        searchStr = id.group()
+
+                print(f'{D = }')
+                # print(f'{searchStr = }')
+
+                if com[0] == 'turn left':
+                    direct = 'left'
+                elif com[0] == 'turn right':
+                    direct = 'right'
+
+                print(f'{direct = }')
+              
+                if D != 360:
+                    last_frame, ALL_Frames = animate_turn(direct=direct, startf=last_frame, keyf=10, D=D)
+                else:
+                    last_frame, ALL_Frames = animate_turn(direct=direct, startf=last_frame, keyf=10)
+                
+
+
             # head
             # ==========================================================================
             elif com[1] == 'head':
