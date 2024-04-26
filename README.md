@@ -23,12 +23,20 @@ command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees
 ```
 command = 'Big: The object raises his head 30 degrees, bowed his head 20 degrees, and shakes his head 60 degrees, looks left 22.33 degrees, looks right 22.33 degrees, walked 2 steps tiems and ran 3 steps tiems seconds, raised his left hand 20 degrees, raised his right hand 20 degrees, put down his left hand 30 degrees, put down his right hand 30 degrees, waves his left hand 60 degrees, waves his right hand 60 degrees, lift his left leg 60 degrees, lift his right leg 60 degrees, puts down his left leg 60 degrees, puts down his right leg 60 degrees, puts down his left leg, lifts his left leg, raises his left forearm 30 degrees, raises his right forearm 30 degrees, puts down his left forearm 30 degrees, puts down his right forearm 30 degrees, wave his left forearm 45 degrees, wave his right forearm 45 degrees, puts down his left calf 20 degrees, puts down his right calf 20 degrees, lifts his left calf 20 degrees, lifts his right calf 20 degrees, puts down his left calf, puts down his right calf, lifts his left calf, lifts his right calf, to the car'
 
-#### Output: Editable 3D Model and Video
+#### Output2: Editable 3D Model and Video
 ![image](https://github.com/lin-jinwei/OneTo3D/blob/main/output3D/gifs/0001-0396.gif)
 
-![image](https://github.com/lin-jinwei/OneTo3D/blob/main/output3D/gifs/v25.gif)
-
 The speed of object actions and 3D video rendering is editable.  
+
+#### Input3: Text Command
+```python
+command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, puts down his left hand 88 degrees, then turns left, moves 3 miles in x direction, looks left, looks right, raising his left hand 60 degrees, raised his right hand 20 degrees, looks right 22.33 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction. Then the object lifts his left leg, puts down his left leg, lifts his right leg, puts down his right leg, puting down his right leg, putting down his left leg 60 degrees, lifts his left leg 10 degrees. Then The object lifts his left leg 0 degrees, lifts his left leg, puts down his left calf 60 degrees, lifts his left calf 60 degrees, puts down his right calf 60 degrees, lifts his right calf 60 degrees, puts down his left leg, moves 3 miles in -x direction, run in 5 miles, raised his left hand 60 degrees, waves his left hand, waves his left forearm, going.'
+```
+command = 'The object walked 2 steps or times, then turns left 0 degrees, raised his left hand, raises his right hand 30 degrees, moves 3 miles in -y direction, raises his head 30 degrees, bowed his head 20 degrees, puts down his left hand, puts down his right hand 10 degrees, and ran 3 steps times seconds, following moves 2 miles in y direction, puts down his right hand 88 degrees, puts down his left hand 88 degrees, then turns left, moves 3 miles in x direction, looks left, looks right, raising his left hand 60 degrees, raised his right hand 20 degrees, looks right 22.33 degrees, walked 2 steps or times, moves 3 miles in -y direction, and ran 3 steps times seconds, puts down his left hand 60 degrees, puts down his right hand 10 degrees, following moves 2 miles in y direction. Then the object lifts his left leg, puts down his left leg, lifts his right leg, puts down his right leg, puting down his right leg, putting down his left leg 60 degrees, lifts his left leg 10 degrees. Then The object lifts his left leg 0 degrees, lifts his left leg, puts down his left calf 60 degrees, lifts his left calf 60 degrees, puts down his right calf 60 degrees, lifts his right calf 60 degrees, puts down his left leg, moves 3 miles in -x direction, run in 5 miles, raised his left hand 60 degrees, waves his left hand, waves his left forearm, going.'
+
+#### Output3: Editable 3D Model and Video
+
+![image](https://github.com/lin-jinwei/OneTo3D/blob/main/output3D/gifs/v25.gif)
 
 ---
 ### Installation
