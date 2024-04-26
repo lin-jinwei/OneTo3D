@@ -3,7 +3,7 @@
 Project Code For Paper: OneTo3D: One Image to Editable Dynamic 3D Model and Video Generation
 
 
-[Project Page](https://lin-jinwei.github.io/projects/OneTo3D/OneTo3D.html)  [HuggingFace Page](https://huggingface.co/LinJinwei/OneTo3D)
+[Project Page](https://lin-jinwei.github.io/projects/OneTo3D/OneTo3D.html) &nbsp;&nbsp;&nbsp; [HuggingFace Page](https://huggingface.co/LinJinwei/OneTo3D)
 
 ---
 
