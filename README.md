@@ -43,7 +43,7 @@ command = 'The object walked 2 steps or times, then turns left 0 degrees, raised
 
 0. You can directly download the zip file of the whole OneTo3D project in [HuggingFace Page](https://huggingface.co/LinJinwei/OneTo3D) (including the model).
 
-1. For the part of generating the initial 3D model, our project selects the [DreamGaussian](https://github.com/dreamgaussian/dreamgaussian) as the basic generation model. You can select other suitable you like to generate the initial 3D model.
+1. For the part of generating the initial 3D model, our project selects the [DreamGaussian](https://github.com/dreamgaussian/dreamgaussian) as the basic generation model. You can select other suitable you like to generate the initial 3D model. Install [MMPOSE](https://github.com/open-mmlab/mmpose).
 
 2. Create a Conda enviroment for OneTo3D:
 
