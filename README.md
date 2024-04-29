@@ -1,4 +1,4 @@
-# OneTo3D: One Image to Editable Dynamic 3D Model and Video Generation
+# OneTo3D: One Image to Re-editable Dynamic 3D Model and Video Generation
 
 Project Code For Paper: OneTo3D: One Image to Editable Dynamic 3D Model and Video Generation
 
