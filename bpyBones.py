@@ -161,13 +161,18 @@ D_waist_neck = abs(p_waist[1] - p_neck[1])
 D_pc15_16_waist = abs(p_waist[1] - pc15_16[1])
 D_neck_top = abs(p_top[1]-p_neck[1])
 
+P_head_wist = 0.1
+
+D_neck_top = D_neck_top * (1-P_head_wist)
+
 # print('=======================================================')
 
 # Create Bone: bone0 len=1
 # Upper Body
 # -------------------------------------------------------------------------------
 p1 = (D_waist_neck/3) * p_obj_H_model_img
-h1 = (D_pc15_16_waist + H_gap) * p_obj_H_model_img 
+
+h1 = (D_pc15_16_waist + H_gap) * p_obj_H_model_img * (1+P_head_wist)
 # print(f'{p1 = }')
 # print(f'{h1 = }')
 bpy.ops.object.armature_add(enter_editmode=False, align='WORLD', location=(0, 0, h1), scale=(1, 1, 1))
@@ -1740,13 +1745,13 @@ def processCommand(command_L):
             
 
 # =========================================================================================================================
-processCommand(command_L)
+# processCommand(command_L)
 
 
 
 
 if_Render = False
-if_Render = True
+# if_Render = True
 
 if if_Render:
     # add new Point light
