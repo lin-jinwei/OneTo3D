@@ -1439,7 +1439,7 @@ def processCommand(command_L):
                         else:
                             D = -1
                 else:
-                    id = re.search(r'[\s0-9\.a-zA-Z]*calf[s]*', end_idx_text)
+                    id = re.search(r'[\s0-9\.a-zA-Z]*', end_idx_text)
                     if id:
                         searchStr = id.group()
 
