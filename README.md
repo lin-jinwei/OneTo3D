@@ -68,20 +68,7 @@ You can test other versions of python enviroments.
 1. Put the image of analyzed object in the directory **./data** of **OneTo3D**. The default format of the image is .png.
 (Note: In the version of OneTo3D, the suitable type of the processed object is human form.)
 
-3. Run the following code to remove the background (from DreamGaussian). If the Background is not removed clear, removing it manually.
-
-```cmd
-python dg1.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
-```
-example:
-```cmd
-python dg1.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
-```
-
----
-
-#### Run and Generating
-1. Generate the initial 3D model:
+2. Run the following code to remove the background (from DreamGaussian). If the Background is not removed clear, removing it manually.
 
 ```cmd
 python process.py data/[the name (including the extension) of the processed image]
@@ -90,6 +77,11 @@ example:
 ```cmd
 python process.py data/people.png
 ```
+
+---
+
+#### Run and Generating
+1. Generate the initial 3D model:
 
 ```cmd
 python dg1.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
