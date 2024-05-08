@@ -91,6 +91,15 @@ example:
 python process.py data/people.png
 ```
 
+```cmd
+python dg1.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
+```
+example:
+```cmd
+python dg1.py --config configs/image-2.yaml input=data/people_rgba.png save_path=data/people_rgba/people_rgba.png
+```
+
+
 2. Make the basic optimization for the initial 3D model:
 ```cmd
 python dg2.py --config configs/image-2.yaml input=data/[input object image path] save_path=data/[output object model path] 
