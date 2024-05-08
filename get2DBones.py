@@ -21,10 +21,8 @@ def pMiddleP(point1, point2, p):
 
 
 def getKeypoints(img_path):
-    # 使用模型别名创建推理器
     inferencer = MMPoseInferencer('human')
 
-    # MMPoseInferencer采用了惰性推断方法，在给定输入时创建一个预测生成器
     # data_gen = inferencer(img_path, show=True)
     # data = next(data_gen)
 
@@ -86,8 +84,10 @@ def save_keypoints(list_path, keypointsL):
 
 
 if __name__ == "__main__":
+    object_name = 'people'
+
     parser = argparse.ArgumentParser(description='Get the keypoints of the 2D bones')
-    parser.add_argument("--objName", required=True, default='', help="name of the process image")
+    parser.add_argument("--objName", required=False, default=object_name, help="name of the analyzed object image")
 
     args = parser.parse_args()
 
