@@ -96,22 +96,48 @@ bpy.context.view_layer.objects.active = bpy.data.objects[obj_name+'_rgba']
 # get the X Y Z dimensions data of the obj
 # -------------------------------------------------------------------------------
 # print('=======================================================')
+obj = bpy.context.object
+bbox = obj.bound_box
+X = (bbox[6][0] - bbox[0][0]) * obj.scale.x
+Z = (bbox[6][1] - bbox[0][1]) * obj.scale.z
+Y = (bbox[6][2] - bbox[0][2]) * obj.scale.y
+
+
+X_center = (bbox[6][0] + bbox[0][0]) / 2 * obj.scale.x
+Y_center = (bbox[6][2] + bbox[0][2]) / 2 * obj.scale.y
+Z_center = (bbox[6][1] + bbox[0][1]) / 2 * obj.scale.z
+print(f'{X_center = }')
+print(f'{Y_center = }')
+print(f'{Z_center = }')
+
+# obj_model_L_X = X
+# obj_model_H_Y = Y
+# obj_model_W_Z = Z
 obj_model_L_X = bpy.context.object.dimensions[0]
 obj_model_H_Y = bpy.context.object.dimensions[1]
 obj_model_W_Z = bpy.context.object.dimensions[2]
+
 # print(f'{bpy.context.object.dimensions = }')
-print(f'{obj_model_L_X = }')
-print(f'{obj_model_H_Y = }')
-print(f'{obj_model_W_Z = }')
-print(f'{bpy.context.object.location = }')
-
-
-# bpy.context.object.location[1] = obj_model_W_Z / 2
+# print(f'{X = }')
+# print(f'{Y = }')
+# print(f'{Z = }')
+# print(f'{obj_model_L_X = }')
+# print(f'{obj_model_H_Y = }')
+# print(f'{obj_model_W_Z = }')
+# print(f'{bpy.context.object.location = }')
 
 
 # re-locate the model
 # -------------------------------------------------------------------------------
-bpy.context.object.location[2] = obj_model_H_Y / 2
+bpy.context.object.location[0] = X_center
+bpy.context.object.location[1] = Y_center
+# bpy.context.object.location[1] = Y_center + 0.03
+
+# bpy.context.object.location[2] = obj_model_H_Y / 2 
+# bpy.context.object.location[2] = obj_model_H_Y / 2 + 0.05
+bpy.context.object.location[2] = Z / 2 + 0.05
+
+
 
 # Calculate the bones details
 # ================================================================================
@@ -352,14 +378,14 @@ head = armature.pose.bones['head']
 left_shoulder = armature.pose.bones['left_shoulder']
 left_upper_arm = armature.pose.bones['left_upper_arm']
 left_forearm = armature.pose.bones['left_forearm']
-# right_shoulder = armature.pose.bones['right_shoulder']
-# right_upper_arm = armature.pose.bones['right_upper_arm']
-# left_hip = armature.pose.bones['left_hip']
-# left_thigh = armature.pose.bones['left_thigh']
-# left_calf = armature.pose.bones['left_calf']
-# rigth_hip = armature.pose.bones['rigth_hip']
-# right_thigh = armature.pose.bones['right_thigh']
-# right_calf = armature.pose.bones['right_calf']
+right_shoulder = armature.pose.bones['right_shoulder']
+right_upper_arm = armature.pose.bones['right_upper_arm']
+left_hip = armature.pose.bones['left_hip']
+left_thigh = armature.pose.bones['left_thigh']
+left_calf = armature.pose.bones['left_calf']
+rigth_hip = armature.pose.bones['rigth_hip']
+right_thigh = armature.pose.bones['right_thigh']
+right_calf = armature.pose.bones['right_calf']
 
 
 ALL_Frames = 0
@@ -1758,8 +1784,8 @@ def processCommand(command_L):
 processCommand(command_L)
 
 
-# if_Render = False
-if_Render = True
+if_Render = False
+# if_Render = True
 
 
 
