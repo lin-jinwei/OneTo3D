@@ -84,7 +84,19 @@ def save_keypoints(list_path, keypointsL):
 
 
 if __name__ == "__main__":
-    object_name = 'people'
+    object_name = 'people'  # 0
+    # object_name = 'man1'  # 0
+    # object_name = 'M2'  # Z / 2 + 0.05
+    # object_name = 'M3'  #  Z / 2 + 0.05
+    # object_name = 'M4'  # Z / 2 + 0.05
+    # object_name = 'M5'  # Z / 2 + 0.05
+
+    # object_name = 'M6'  # Z / 2 + 0.05
+    # object_name = 'M7'  # Z / 2 + 0.3
+    # object_name = 'M8' # Z / 2 + 0.05
+
+
+
 
     parser = argparse.ArgumentParser(description='Get the keypoints of the 2D bones')
     parser.add_argument("--objName", required=False, default=object_name, help="name of the analyzed object image")
