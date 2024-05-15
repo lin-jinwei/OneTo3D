@@ -13,6 +13,8 @@ Project Code For Paper: OneTo3D: One Image to Editable Dynamic 3D Model and Vide
 ---
 ### Display of Continuous Model Action and Video Generation
 
+![image](https://github.com/lin-jinwei/OneTo3D/blob/main/data/page/1.png)
+
 #### Input0: 2D Image of the object
 
 <img src="https://github.com/lin-jinwei/OneTo3D/blob/main/data/people.png" width = 360>
