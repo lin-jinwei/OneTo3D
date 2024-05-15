@@ -159,7 +159,16 @@ example:
 ---
 
 ### Paper Cite
-Writing...
+```tex
+@misc{lin2024oneto3d,
+      title={OneTo3D: One Image to Re-editable Dynamic 3D Model and Video Generation}, 
+      author={Jinwei Lin},
+      year={2024},
+      eprint={2405.06547},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 
 
